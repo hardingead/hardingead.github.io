@@ -1,0 +1,171 @@
+.about-list li {
+    margin-bottom: 10px;
+}
+
+.intro-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 50px;
+}
+
+header .intro-text {
+    padding-top: 250px !important;
+}
+
+ul.about-list {
+    list-style-image: url('../img/harding/icon_light_bulb_small.png');
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+p {
+   font-size: 16px;
+}
+
+h3.text-muted {
+    line-height: 1.7em;
+}
+
+.logo-top-left {
+    display: none;
+    text-transform: uppercase !important;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+
+.navbar-shrink .logo-top-left {
+    display: block;
+}
+
+.text-primary {
+    color: #22964B;
+}
+
+.navbar-default .navbar-brand {
+    color: #22964B;
+}
+
+a {
+    color: #22964B;
+}
+
+.btn-xl, .btn-xl:active, .btn-xl:visited {
+    border:none;
+    background-color: #22964B;
+}
+
+.btn-xl:hover {
+    border:none;
+    background-color: #28A153;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:active,
+.navbar-default .navbar-nav>.active>a:visited,
+.navbar-default .navbar-nav>.active>a:focus{
+    border:none;
+    background-color: #22964B;
+}
+
+.navbar-default .navbar-nav>.active>a:hover {
+    border:none;
+    background-color: #28A153;
+}
+
+.btn-xl:hover, .btn-xl:focus, .btn-xl:active, .btn-xl.active, .open .dropdown-toggle.btn-xl {
+    background-color: #28A153;
+}
+
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-toggle:active,
+.navbar-default .navbar-toggle:focus {
+    border:none;
+    background-color: #28A153;
+}
+.navbar-default .navbar-toggle:hover {
+    border:none;
+    background-color: #28A153;
+}
+
+.navbar-default .nav li a:hover, .navbar-default .nav li a:focus {
+    color: #32da79;
+}
+
+p a:hover, p a:visited, p a:active {
+    color: #32da79;
+}
+
+li a:hover, li a:visited, li a:active {
+    color: #32da79;
+}
+
+.timeline>li .timeline-image,
+.timeline>li .timeline-image:active,
+.timeline>li .timeline-image:focus {
+    background-color: #22964B;
+}
+
+.timeline>li .timeline-image:hover {
+    background-color: #28A153;
+}
+
+a:hover {
+    color:#ffffff;
+}
+
+a.page-scroll:hover,
+a.page-scroll:active
+a.page-scroll:active
+{
+    color: #32da79 !important;
+}
+
+li.active a.page-scroll:hover {
+    color: #ffffff !important;
+}
+
+.intro-text a:hover, a:visited, a:active {
+    color: #ffffff !important;
+}
+
+.intro-text .btn {
+    border: 3px #32da79;
+}
+
+header .intro-text .intro-heading {
+    margin-bottom: 0 !important;
+}
+
+.intro-heading-2 {
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 75px;
+}
+
+@media(max-width:991px) {
+    .intro-heading-2 {
+        font-size: 25px;
+    }
+    section h2.section-heading {
+        font-size: 30px;
+    }
+}
+
+#contact-form-container-hidden {
+    display: none;
+}
+
+.first-container {
+    background-color: #333;
+}
+
+
+ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li a:active,
+ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li a:hover,
+ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li a:focus {
+    background-color: #28A153;
+}
+
