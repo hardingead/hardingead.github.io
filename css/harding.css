@@ -11,6 +11,12 @@
 header .intro-text {
     padding-top: 250px !important;
 }
+@media(max-width:991px) {
+    header .intro-text {
+        padding-top: 140px !important;
+    }
+}
+
 
 ul.about-list {
     list-style-image: url('../img/harding/icon_light_bulb_small.png');
