@@ -1,7 +1,7 @@
 // Simple solution from
-var form_container = document.getElementById('contact-form-container-hidden');
-var xhr_object = new Webform_Xhr('http://www.vision6.com.au/em/forms/xhr?db=460698&s=163100&a=52551&t=1&k=nNX-aQJicOuiN4_IDdHloi_RWPFCSoTHfYNYkPOh7mk', form_container);
-xhr_object.initialize();
+//var form_container = document.getElementById('contact-form-container-hidden');
+//var xhr_object = new Webform_Xhr('http://www.vision6.com.au/em/forms/xhr?db=460698&s=163100&a=52551&t=1&k=nNX-aQJicOuiN4_IDdHloi_RWPFCSoTHfYNYkPOh7mk', form_container);
+//xhr_object.initialize();
 
 /* attach a submit handler to the form */
 $("#contactForm").submit(function (event) {
@@ -17,33 +17,21 @@ $("#contactForm").submit(function (event) {
     var email_val = $('#contact-email').val();
     var phone_val = $('#contact-phone').val();
     var enquiry_val = $('#contact-message').val();
+    var gotcha_val = $('#gotcha').val();
 
-
-    $('#contact-form-container-hidden input[name="emfid_3605533"]').val(name_val);
-    $('#contact-form-container-hidden input[name="emfid_3605535"]').val(email_val);
-    $('#contact-form-container-hidden input[name="emfid_3605536"]').val(phone_val);
-    $('#contact-form-container-hidden textarea[name="emfid_3605537"]').val(enquiry_val);
-
-    setTimeout(function(){
-        xhr_object._field_data.forEach(function (i) {
-            switch (i.id){
-                case "emfid_3605533":
-                    i.value = name_val;
-                    break;
-                case "emfid_3605535":
-                    i.value = email_val;
-                    break;
-                case "emfid_3605536":
-                    i.value = phone_val;
-                    break;
-                case "emfid_3605537":
-                    i.value = enquiry_val;
-                    break;
-            }
-        });
-        xhr_object.processSubmit();
-    }, 10);
-
+    $.ajax({
+        url: "//formspree.io/matt@hardingead.com.au",
+        method: "POST",
+        data: {
+            "name": name_val,
+            "_replyto": email_val,
+            "email": email_val,
+            "phone": phone_val,
+            "enquiry": enquiry_val,
+            "_gotcha": gotcha_val
+        },
+        dataType: "json"
+    });
 
     $('#contact-form-heading').text('Thanks, we\'ll get back to you shortly');
     $('#contactForm').remove();
